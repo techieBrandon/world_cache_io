@@ -1,4 +1,6 @@
 language: ruby
+env:
+  RAILS_ENV=test
 rvm:
   - ruby-1.9.3
 install:
@@ -10,8 +12,6 @@ install:
   - sudo apt-get install postgresql-9.1-postgis2 -q
   - bundle install
 before_script:
-  - psql -c 'CREATE SCHEMA postgis;' -U postgres
-  - psql -c 'create database world_cache_test;' -U postgres
-  - psql -c 'CREATE EXTENSION postgis;' -U postgres
-  - RAILS_ENV=test bundle exec rake db:migrate
+  - bundle exec rake db:create
+  - bundle exec rake db:migrate
 script: rspec spec
