@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/techieBrandon/world_cache_io.png)]
+
 Providing realtime publishing of world events and their relationships in a beautiful manner.
 
 Install simple postgresql instance from:
