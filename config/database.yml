@@ -5,7 +5,7 @@ development:
   postgis_extension: true
   schema_search_path: public,postgis
   pool: 5
-  username: brandonwilburn
+  username: postgres
   password:  
 
 test:
@@ -15,7 +15,7 @@ test:
   postgis_extension: true
   schema_search_path: public,postgis
   pool: 5
-  username: brandonwilburn
+  username: postgres
   password:  
 
 production:
@@ -25,6 +25,6 @@ production:
   postgis_extension: true
   schema_search_path: public,postgis
   pool: 5
-  username: brandonwilburn
+  username: postgres
   password:  
 
