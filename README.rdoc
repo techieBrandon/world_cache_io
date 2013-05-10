@@ -1,4 +1,4 @@
-{<img src="https://travis-ci.org/techieBrandon/world_cache_io.png" />}[https://travis-ci.org/techieBrandon/world_cache_io]]
+{<img src="https://travis-ci.org/techieBrandon/world_cache_io.png" />}[https://travis-ci.org/techieBrandon/world_cache_io]
 
 Providing realtime publishing of world events and their relationships in a beautiful manner.
 
