@@ -2,32 +2,3 @@
 
 Providing realtime publishing of world events and their relationships in a beautiful manner.
 
-Install simple postgresql instance from:
-http://postgresapp.com/
-
-If you obtain error:
-        could not connect to server: Permission denied
-        Is the server running locally and accepting
-        connections on Unix domain socket "/var/pgsql_socket/.s.PGSQL.5432"?
-To resolve:
-        export PGHOST=localhost
-   (or modify PATH exports):
-        PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
-
-If you obtain error:
-        PG::Error: ERROR:  invalid value for parameter "TimeZone": "UTC"
-        : SET time zone 'UTC'
-To resolve:
-        SET time zone 'UTC'
-
-Create the POSTGIS extension:
-?> psql
-   CREATE EXTENSION postgis;
-
-If you obtain error:
-   CREATE EXTENSION postgis;
-       ERROR:  could not load library "/Applications/Postgres.app/Contents/MacOS/lib/rtpostgis-2.0.so": dlopen(/Applications/Postgres.app/Contents/MacOS/lib/rtpostgis-2.0.so, 10): Library not loaded: /usr/local/lib/libtiff.5.dylib
-       Referenced from: /Applications/Postgres.app/Contents/MacOS/bin/../lib/libgdal.1.dylib
-       Reason: image not found
-To resolve:
-       brew install libtiff
