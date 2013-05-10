@@ -1,7 +1,7 @@
 development:
   adapter: postgis
   encoding: unicode
-  database: world_cache
+  database: world_cache_development
   postgis_extension: true
   schema_search_path: public,postgis
   pool: 5
@@ -11,7 +11,7 @@ development:
 test:
   adapter: postgis
   encoding: unicode
-  database: world_cache
+  database: world_cache_test
   postgis_extension: true
   schema_search_path: public,postgis
   pool: 5
@@ -21,7 +21,7 @@ test:
 production:
   adapter: postgis
   encoding: unicode
-  database: world_cache 
+  database: world_cache_production 
   postgis_extension: true
   schema_search_path: public,postgis
   pool: 5
