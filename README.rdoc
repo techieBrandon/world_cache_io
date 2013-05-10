@@ -1,4 +1,5 @@
-[![Build Status](https://secure.travis-ci.org/techieBrandon/world_cache_io.png)]
+
+[![Build Status](https://secure.travis-ci.org/techieBrandon/world_cache_io.png)](http://travis-ci.org/techieBrandon/world_cache_io)
 
 Providing realtime publishing of world events and their relationships in a beautiful manner.
 
