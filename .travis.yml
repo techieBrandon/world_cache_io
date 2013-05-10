@@ -6,9 +6,9 @@ env:
 install:
   - sudo apt-get update
   - sudo sudo apt-add-repository -y ppa:sharpie/for-science;
-  - sudo apt-get install postgresql-9.2-postgis -q
+  - sudo apt-get install postgresql-9.1-postgis -q
+  - sudo find / -name postgis.control
 before_script:
-  - sh -c 'sudo find / -name postgis.control'
   - psql -c 'create database world_cache_test;' -U postgres
   - psql -c 'CREATE EXTENSION postgis;' -U postgres
 script: rspec spec
