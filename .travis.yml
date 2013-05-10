@@ -1,8 +1,6 @@
 language: ruby
 rvm:
   - ruby-1.9.3
-env:
-  - POSTGIS_VERSION=2.0.3
 install:
   - sudo apt-get install python-software-properties
   - sudo apt-add-repository -y ppa:sharpie/for-science 
