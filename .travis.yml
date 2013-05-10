@@ -1,11 +1,10 @@
 language: ruby
-
-
 rvm:
   - ruby-1.9.3
 env:
   - POSTGIS_VERSION=2.0.3 GEOS_VERSION=3.3.8
 install:
+  - sudo apt-get update
   - sudo apt-get install build-essential postgresql-9.1 postgresql-server-dev-9.1 libxml2-dev libproj-dev libjson0-dev xsltproc docbook-xsl docbook-mathml;
   - wget http://download.osgeo.org/geos/geos-$GEOS_VERSION.tar.bz2;
   - tar xvfj geos-$GEOS_VERSION.tar.bz2;
