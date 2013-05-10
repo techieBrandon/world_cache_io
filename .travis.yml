@@ -8,9 +8,9 @@ install:
   - sudo apt-add-repository -y ppa:ubuntugis/ubuntugis-unstable 
   - sudo apt-get update
   - sudo apt-get install postgresql-9.1-postgis2 -q
-  - sudo find / -name postgis.control
   - bundle install
 before_script:
+  - psql -c 'CREATE SCHEMA postgis;' -U postgres
   - psql -c 'create database world_cache_test;' -U postgres
   - psql -c 'CREATE EXTENSION postgis;' -U postgres
   - bundle exec rake db:migrate
