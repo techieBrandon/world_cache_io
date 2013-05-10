@@ -1,4 +1,7 @@
 language: ruby
 rvm:
   - ruby-1.9.3
+before_script:
+  - psql -c 'CREATE EXTENSION postgis;' -U postgres
+  - psql -c 'create database world_cache_test;' -U postgres
 script: rspec spec
