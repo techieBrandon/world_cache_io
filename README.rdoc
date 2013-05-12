@@ -1,4 +1,5 @@
 {<img src="https://travis-ci.org/techieBrandon/world_cache_io.png" />}[https://travis-ci.org/techieBrandon/world_cache_io]
+{<img src="https://coveralls.io/repos/techieBrandon/world_cache_io/badge.png?branch=master" alt="Coverage Status" />}[https://coveralls.io/r/techieBrandon/world_cache_io?branch=master]
 
 Providing realtime publishing of world events and their relationships in a beautiful manner.
 
