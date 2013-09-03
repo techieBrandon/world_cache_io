@@ -77,3 +77,6 @@ Specs are located in <app_root>/spec/*
 
 ==Deploy to EC2
 I am currently automating deployment of the entire infrastructure to Amazon's EC2 instances using {Rubber}[https://github.com/rubber/rubber]
+
+
+This document is written in {RDoc}[http://rdoc.rubyforge.org/RDoc/Markup.html] markup.
