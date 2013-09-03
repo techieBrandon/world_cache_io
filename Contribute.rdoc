@@ -2,6 +2,7 @@
 
 Please be familiar with Ruby and JavaScript conventions, study existing code styling, and review the feature requests and project goals before making contributions.
 
+==Install Middleware and WebApp
 ====Install RVM and Homebrew
 Prep your system to pull other dependencies
   curl -L https://get.rvm.io | bash
@@ -57,6 +58,7 @@ To resolve:
 
 create role postgres superuser createdb createrole inherit login;
 
+==Run Specs
 ====Run Jasmine and PhantomJS Specs
 Specs are located in <app_root>/spec/*
   grunt test`
