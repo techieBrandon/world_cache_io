@@ -9,13 +9,16 @@ gem 'squeel'
 
 gem 'rgeo'
 
+gem 'tweetstream'
+
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
   gem 'haml-rails'
-
+  gem 'compass'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer', :platforms => :ruby
 
