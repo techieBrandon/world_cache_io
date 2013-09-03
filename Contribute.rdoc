@@ -1,5 +1,38 @@
-nstall simple postgresql instance from:
-http://postgresapp.com/
+= Contributing
+
+====Install RVM and Homebrew
+Prep your system to pull other dependencies
+  curl -L https://get.rvm.io | bash
+  cd /usr/local
+  mkdir homebrew && curl -L https://github.com/mxcl/homebrew/tarball/master | tar xz --strip 1 -C homebrew
+
+====Install NodeJS and PhantomJS
+  brew update && brew install node phantomjs
+
+====Install Yoeman (Bower & Grunt)
+  npm install -g grunt-cli bower yo generator-webapp generator-angular`
+
+====Install Node Dependencies
+Deps are defined in package.json
+  npm install`
+
+====Install Bundler
+  gem install bundler`
+
+====Install Ruby Dependencies
+Deps are defined in Gemfile
+  bundle install`
+
+====Run Jasmine and PhantomJS Specs
+Specs are located in <app_root>/spec/*
+  grunt test`
+
+====Run RSpec Specs
+Specs are located in <app_root>/spec/*
+  rspec spec -f d`
+
+====Install Postgresql
+Install simple instance from: http://postgresapp.com/
 
 If you obtain error:
         could not connect to server: Permission denied
@@ -27,3 +60,5 @@ If you obtain error:
        Reason: image not found
 To resolve:
        brew install libtiff
+
+create role postgres superuser createdb createrole inherit login;
