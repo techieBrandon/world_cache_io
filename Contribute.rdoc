@@ -13,14 +13,11 @@ Prep your system to pull other dependencies with {Homebrew}[http://brew.sh/]
   mkdir homebrew && curl -L https://github.com/mxcl/homebrew/tarball/master | tar xz --strip 1 -C homebrew
 
 ====Install NodeJS and PhantomJS
-{PhantomJS}[http://phantomjs.org/]
-{NodeJS}[http://nodejs.org/]
+{PhantomJS}[http://phantomjs.org/] | {NodeJS}[http://nodejs.org/]
   brew update && brew install node phantomjs
 
 ====Install Yoeman (Bower & Grunt)
-[Yoeman](http://yeoman.io/)
-[Bower](http://bower.io/)
-[Grunt](http://gruntjs.com/)
+{Yoeman}[http://yeoman.io/] | {Bower}[http://bower.io/] | {Grunt}[http://gruntjs.com/]
   npm install -g grunt-cli bower yo generator-webapp generator-angular
 
 ====Install Node Dependencies
@@ -28,7 +25,7 @@ Deps are defined in package.json
   npm install
 
 ====Install Bundler
-[Bundler](http://bundler.io/)
+{Bundler}[http://bundler.io/]
   gem install bundler
 
 ====Install Ruby Dependencies
@@ -68,7 +65,7 @@ To resolve:
 create role postgres superuser createdb createrole inherit login;
 
 ==Run Specs
-Testing is currently handled by [Rspec](http://rspec.info/) and [Jasmine](http://pivotal.github.io/jasmine/) with headless webkit provided by [PhantomJS](http://phantomjs.org/)
+Testing is currently handled by {Rspec}[http://rspec.info/] and {Jasmine}[http://pivotal.github.io/jasmine/] with headless webkit provided by [PhantomJS](http://phantomjs.org/)
 
 ====Run Jasmine and PhantomJS Specs
 Specs are located in <app_root>/spec/*
@@ -79,4 +76,4 @@ Specs are located in <app_root>/spec/*
   rspec spec -f d`
 
 ==Deploy to EC2
-I am currently automating deployment of the entire infrastructure to Amazon's EC2 instances using [Rubber](https://github.com/rubber/rubber)
+I am currently automating deployment of the entire infrastructure to Amazon's EC2 instances using {Rubber}[https://github.com/rubber/rubber]
