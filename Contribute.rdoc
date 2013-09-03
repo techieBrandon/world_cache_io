@@ -4,17 +4,17 @@ Please be familiar with Ruby and JavaScript conventions, study existing code sty
 
 ==Install Middleware and WebApp
 ====Install RVM
-Use [RVM](https://rvm.io/) for ruby version management
+Use {RVM}[https://rvm.io/] for ruby version management
   curl -L https://get.rvm.io | bash
 
 ===Install Homebrew
-Prep your system to pull other dependencies with [Homebrew](http://brew.sh/)
+Prep your system to pull other dependencies with {Homebrew}[http://brew.sh/]
   cd /usr/local
   mkdir homebrew && curl -L https://github.com/mxcl/homebrew/tarball/master | tar xz --strip 1 -C homebrew
 
 ====Install NodeJS and PhantomJS
-[PhnatomJS](http://phantomjs.org/)
-[NodeJS](http://nodejs.org/)
+{PhantomJS}[http://phantomjs.org/]
+{NodeJS}[http://nodejs.org/]
   brew update && brew install node phantomjs
 
 ====Install Yoeman (Bower & Grunt)
