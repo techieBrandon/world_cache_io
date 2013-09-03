@@ -1,5 +1,7 @@
 = Contributing
 
+Please be familiar with Ruby and JavaScript conventions, study existing code styling, and review the feature requests and project goals before making contributions.
+
 ====Install RVM and Homebrew
 Prep your system to pull other dependencies
   curl -L https://get.rvm.io | bash
@@ -10,26 +12,18 @@ Prep your system to pull other dependencies
   brew update && brew install node phantomjs
 
 ====Install Yoeman (Bower & Grunt)
-  npm install -g grunt-cli bower yo generator-webapp generator-angular`
+  npm install -g grunt-cli bower yo generator-webapp generator-angular
 
 ====Install Node Dependencies
 Deps are defined in package.json
-  npm install`
+  npm install
 
 ====Install Bundler
-  gem install bundler`
+  gem install bundler
 
 ====Install Ruby Dependencies
 Deps are defined in Gemfile
-  bundle install`
-
-====Run Jasmine and PhantomJS Specs
-Specs are located in <app_root>/spec/*
-  grunt test`
-
-====Run RSpec Specs
-Specs are located in <app_root>/spec/*
-  rspec spec -f d`
+  bundle install
 
 ====Install Postgresql
 Install simple instance from: http://postgresapp.com/
@@ -50,7 +44,7 @@ To resolve:
         SET time zone 'UTC'
 
 Create the POSTGIS extension:
-?> psql
+   ?> psql
    CREATE EXTENSION postgis;
 
 If you obtain error:
@@ -62,3 +56,13 @@ To resolve:
        brew install libtiff
 
 create role postgres superuser createdb createrole inherit login;
+
+====Run Jasmine and PhantomJS Specs
+Specs are located in <app_root>/spec/*
+  grunt test`
+
+====Run RSpec Specs
+Specs are located in <app_root>/spec/*
+  rspec spec -f d`
+
+
