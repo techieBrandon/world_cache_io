@@ -65,7 +65,7 @@ To resolve:
 create role postgres superuser createdb createrole inherit login;
 
 ==Run Specs
-Testing is currently handled by {Rspec}[http://rspec.info/] and {Jasmine}[http://pivotal.github.io/jasmine/] with headless webkit provided by {PhantomJS}[http://phantomjs.org/]
+Testing is currently handled by {Rspec}[http://rspec.info/] and {Jasmine}[http://pivotal.github.io/jasmine/] with headless webkit provided by {PhantomJS}[http://phantomjs.org/]. Continuous Integration is currently hosted on {Travis-CI}[https://travis-ci.org/] located at https://travis-ci.org/techieBrandon/world_cache_io.
 
 ====Run Jasmine and PhantomJS Specs
 Specs are located in <app_root>/spec/*
